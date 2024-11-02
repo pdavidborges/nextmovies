@@ -8,7 +8,7 @@ export async function getData(tipo){
     let categoria = tipo == 'filmes' ? 'movie' : 'tv';
 
     try{
-        const response = await axios.get(`https://api.themoviedb.org/3/${categoria}/top_rated`,{
+        const response = await axios.get(`https://api.themoviedb.org/3/${categoria}/popular`,{
             params : {
                 api_key : 'da2d5c042225a0ba6c641ca4f441ddf2',
                 page : 1,
